@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>San'in & Îles Oki – Voyages B2B</title>
+  <link rel="icon" type="image/jpeg" href="assets/fabicon.jpg">
+  <style>
+    :root { --bg:#f2f2f2; --fg:#000000; --acc:#c3a86b; }
+    body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--fg);}
+    header,footer{padding:1rem;background:rgba(15,26,42,.6);position:fixed;left:0;right:0;z-index:2;backdrop-filter:blur(6px);}
+    header{top:0;display:flex;justify-content:space-between;align-items:center;}
+    header img{height:40px;}
+    header a{color:#fff;text-decoration:none;margin-left:1rem;}
+    main{margin-top:70px;}
+    .hero{position:relative;height:100vh;display:grid;place-items:center;text-align:center;}
+    .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;filter:brightness(.55);}
+    .hero h1{font-size:clamp(28px,5vw,56px);}
+    .btn{display:inline-block;background:var(--acc);color:#111;padding:.8rem 1.2rem;border-radius:30px;text-decoration:none;margin-top:1rem;}
+    section{padding:3rem 1.2rem;max-width:1100px;margin:auto;}
+    .grid{display:grid;gap:1.2rem;}
+    @media(min-width:800px){.grid-3{grid-template-columns:repeat(3,1fr);}}
+    .card{background:#fff1;padding:1rem;border-radius:10px;}
+    footer{bottom:0;text-align:center;}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/jma-logo.jpg" alt="Logo JMA">
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="itinerary.html">Circuit 10 jours</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <video src="assets/hero.mp4" autoplay muted loop playsinline></video>
+      <div>
+        <h1>Découvrez le Japon secret : San'in & les îles Oki</h1>
+        <a class="btn" href="itinerary.html">Voir le circuit de 10 jours</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pourquoi San'in & Oki ?</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <img src="assets/card1.jpg" alt="Culture" style="width:100%;border-radius:8px;">
+          <h3>⛩️ Culture</h3>
+          <p>Izumo Taisha, artisanats, traditions vivantes.</p>
+        </div>
+        <div class="card">
+          <img src="assets/card2.jpg" alt="Nature" style="width:100%;border-radius:8px;">
+          <h3>🌊 Nature</h3>
+          <p>Dunes de Tottori, falaises volcaniques, paysages marins.</p>
+        </div>
+        <div class="card">
+          <img src="assets/card3.jpg" alt="Gastronomie" style="width:100%;border-radius:8px;">
+          <h3>🍶 Gastronomie</h3>
+          <p>Saké, fruits de mer, cuisine locale.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>À propos</h2>
+      <img src="assets/about.jpg" alt="À propos" style="width:100%;border-radius:10px;margin-bottom:1rem;">
+      <p>Notre agence propose des circuits exclusifs au Japon, spécialement conçus pour les voyageurs français en partenariat avec les agences locales.</p>
+    </section>
+
+    <section>
+      <h2>Moments forts</h2>
+      <div class="grid grid-3">
+        <img src="assets/j1.jpg" alt="Jour 1" style="width:100%;border-radius:8px;">
+        <img src="assets/j2.jpg" alt="Jour 2" style="width:100%;border-radius:8px;">
+        <img src="assets/j3.jpg" alt="Jour 3" style="width:100%;border-radius:8px;">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/footer.jpg" alt="Footer image" style="height:50px;display:block;margin:auto;">
+    <p>© 2025 JMA</p>
+  </footer>
+</body>
+</html>
